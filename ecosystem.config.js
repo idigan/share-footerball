@@ -14,7 +14,8 @@ module.exports = {
 
   deploy: {
     production: {
-      user: "iZbp1i5bth3hh7nnscm8maZ", // 替换成你自己的主机名
+      // user: "iZbp1i5bth3hh7nnscm8maZ", // 替换成你自己的主机名
+      user: "root", // 替换成你自己的主机名
       host: "8.139.6.25", // 替换成你自己的主机 ip
       port: "9000", // 替换成你自己的端口号
       ref: "origin/main", // 替换成你自己的分支
