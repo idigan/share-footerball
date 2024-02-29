@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon main.js"
+    "serve": "pm2 start main.js",
+    "pm2:init": "pm2 deploy ecosystem.config.js production setup",
+    "pm2:deploy": "pm2 deploy ecosystem.config.js production",
+    "pm2:revert": "pm2 deploy ecosystem.config.js production revert 1"
   },
   "keywords": [],
   "author": "",
